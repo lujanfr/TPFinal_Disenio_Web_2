@@ -1,0 +1,10 @@
+# Ignorar carpetas locales de configuración
+.vs/
+.vscode/
+
+# Ignorar bases de datos locales o temporales
+*.sqlite
+
+# Ignorar otros archivos del sistema
+*.log
+node_modules/
