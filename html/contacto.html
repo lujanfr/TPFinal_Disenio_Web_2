@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Game of Thrones</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="../img/logo_got.png" alt="Logo Game of Thrones" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto">
+    <h1>📜 Contacto</h1>
+    <img src="../img/contact_got.jpg" alt="Mapa de Westeros" class="contact-img">
+
+    <form id="contactForm">
+      <!-- Campo 1 -->
+      <label for="nombre">Nombre completo *</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Jon Snow">
+
+      <!-- Campo 2 -->
+      <label for="email">Correo electrónico *</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+
+      <!-- Campo 3 -->
+      <label for="casa">Casa favorita *</label>
+      <select id="casa" name="casa">
+        <option value="">-- Seleccioná una casa --</option>
+        <option value="Stark">Casa Stark 🐺</option>
+        <option value="Targaryen">Casa Targaryen 🐉</option>
+        <option value="Lannister">Casa Lannister 🦁</option>
+      </select>
+
+      <!-- Campo 4 -->
+      <label>¿Te gustaría recibir noticias de Westeros?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="noticias" value="si"> Sí</label>
+        <label><input type="radio" name="noticias" value="no"> No</label>
+      </div>
+
+      <!-- Campo 5 -->
+      <label for="mensaje">Mensaje *</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje..."></textarea>
+
+      <div class="form-buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 - Luján Frete, Ornela Baldini, Gonzalo Álvarez</p>
+    <a href="https://github.com/lujanfr/TPFinal_Disenio_Web_2" target="_blank">Repositorio en GitHub</a>
+  </footer>
+
+  <script src="../js/contacto.js"></script>
+</body>
+</html>
